@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Calculator app</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="calculadora">
+      <div class="numeros-topo">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+      </div>
+      <div class="calc-topo">
+        <span id="logo">calc</span>
+        <div class="theme">
+          <span>theme</span>
+          <div class="temas-checkbox">
+            <input type="radio" name="state" id="tema-1">
+            <label for="tema-1" class="label-1"></label>
+            <input type="radio" name="state" id="tema-2">
+            <label for="tema-2" class="label-2"></label>
+            <input type="radio" name="state" id="tema-3">
+            <label for="tema-3" class="label-3"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-visor">
+        <input type="text" name="visor" id="visor" class="visor">
+      </div>
+
+      <div class="fundo-botoes">
+        <div class="linha-um">
+          <button class="calc-botao branco" onclick="inserir(7)">7</button>
+          <button class="calc-botao branco" onclick="inserir(8)">8</button>
+          <button class="calc-botao branco" onclick="inserir(9)">9</button>
+          <button class="calc-botao del" onclick="deletar()">DEL</button>
+        </div>
+        <div class="linha-dois">
+          <button class="calc-botao branco" onclick="inserir(4)">4</button>
+          <button class="calc-botao branco" onclick="inserir(5)">5</button>
+          <button class="calc-botao branco" onclick="inserir(6)">6</button>
+          <button class="calc-botao branco" onclick="inserir('+')">+</button>
+        </div>
+        <div class="linha-tres">
+          <button class="calc-botao branco" onclick="inserir(1)">1</button>
+          <button class="calc-botao branco" onclick="inserir(2)">2</button>
+          <button class="calc-botao branco" onclick="inserir(3)">3</button>
+          <button class="calc-botao branco" onclick="inserir('-')">-</button>
+        </div>
+        <div class="linha-quatro">
+          <button class="calc-botao branco" onclick="inserir('.')">.</button>
+          <button class="calc-botao branco" onclick="inserir(0)">0</button>
+          <button class="calc-botao branco" onclick="inserir('/')">/</button>
+          <button class="calc-botao branco" onclick="inserir('*')">x</button>
+        </div>
+        <div class="linha-cinco">
+          <button class="calc-botao config reset" onclick="limpar()">RESET</button>
+          <button class="calc-botao config igual" onclick="calcular()">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

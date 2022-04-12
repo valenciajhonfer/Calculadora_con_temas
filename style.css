@@ -1,0 +1,335 @@
+:root {
+  --container-fundo: hsl(222, 26%, 31%);
+  --logo-fonte-cor: white;
+
+  --theme-fonte-cor: white;
+  --tema-numeros-cor: white;
+  --tema-fundo: hsl(223, 31%, 20%);
+  --tema-check: hsl(6, 63%, 50%);
+
+  --visor-background: hsl(224, 36%, 15%);
+  --visor-fonte: white;
+
+  --botoes-background: hsl(223, 31%, 20%);
+  --botoes-geral-fundo: white;
+  --botoes-geral-shadow: 0 3px rgb(129, 129, 129);
+  --botoes-geral-cor: hsl(221, 14%, 31%);
+  --botoes-geral-hover: hsl(217, 14%, 19%);
+
+  --botoes-del-reset-fundo: hsl(225, 21%, 49%);
+  --botoes-del-reset-shadow: 0 3px hsl(224, 28%, 35%);
+  --botoes-del-reset-fonte-cor: white;
+
+  --botoes-igual-fundo: hsl(6, 63%, 50%);
+  --botoes-igual-shadow: 0 3px hsl(6, 70%, 34%);
+  --botoes-igual-fonte-cor: white;
+}
+
+.tema-1:root {
+  --container-fundo: hsl(222, 26%, 31%);
+  --logo-fonte-cor: white;
+
+  --theme-fonte-cor: white;
+  --tema-numeros-cor: white;
+  --tema-fundo: hsl(223, 31%, 20%);
+  --tema-check: hsl(6, 63%, 50%);
+
+  --visor-background: hsl(224, 36%, 15%);
+  --visor-fonte: white;
+
+  --botoes-background: hsl(223, 31%, 20%);
+  --botoes-geral-fundo: white;
+  --botoes-geral-shadow: 0 3px rgb(129, 129, 129);
+  --botoes-geral-cor: hsl(221, 14%, 31%);
+  --botoes-geral-hover: hsl(217, 14%, 19%);
+
+  --botoes-del-reset-fundo: hsl(225, 21%, 49%);
+  --botoes-del-reset-shadow: 0 3px hsl(224, 28%, 35%);
+  --botoes-del-reset-fonte-cor: white;
+
+  --botoes-igual-fundo: hsl(6, 63%, 50%);
+  --botoes-igual-shadow: 0 3px hsl(6, 70%, 34%);
+  --botoes-igual-fonte-cor: white;
+}
+
+.tema-2:root {
+  --container-fundo: hsl(0, 0%, 93%);
+  --logo-fonte-cor: hsl(60, 10%, 19%);
+
+  --theme-fonte-cor: hsl(60, 10%, 19%);
+  --tema-numeros-cor: hsl(60, 10%, 19%);
+  --tema-fundo: hsl(0, 5%, 81%);
+  --tema-check: hsl(6, 63%, 50%);
+
+  --visor-background: white;
+  --visor-fonte: hsl(60, 10%, 19%);
+
+  --botoes-background: hsl(0, 5%, 81%);
+  --botoes-geral-fundo: hsl(45, 7%, 89%);
+  --botoes-geral-shadow: 0 3px hsl(35, 11%, 61%);
+  --botoes-geral-cor: hsl(60, 10%, 19%);
+  --botoes-geral-hover: hsl(217, 14%, 19%);
+
+  --botoes-del-reset-fundo: hsl(185, 42%, 37%);
+  --botoes-del-reset-shadow: 0 3px hsl(185, 58%, 25%);
+  --botoes-del-reset-fonte-cor: white;
+
+  --botoes-igual-fundo: hsl(25, 98%, 40%);
+  --botoes-igual-shadow: 0 3px hsl(25, 99%, 27%);
+  --botoes-igual-fonte-cor: white;
+}
+
+.tema-3:root {
+  --container-fundo: hsl(268, 75%, 9%);
+  --logo-fonte-cor: hsl(52, 100%, 62%);
+  
+  --theme-fonte-cor: hsl(52, 100%, 62%);
+  --tema-numeros-cor: hsl(52, 100%, 62%);
+  --tema-fundo: hsl(268, 69%, 20%);
+  --tema-check: hsl(176, 100%, 44%);
+
+  --visor-background: hsl(268, 71%, 12%);
+  --visor-fonte: hsl(52, 100%, 62%);
+
+  --botoes-background: hsl(268, 71%, 12%);
+  --botoes-geral-fundo: hsl(268, 47%, 21%);
+  --botoes-geral-shadow: 0 3px hsl(290, 70%, 36%);
+  --botoes-geral-cor: hsl(52, 100%, 62%);
+  --botoes-geral-hover: hsl(52, 100%, 62%);
+
+  --botoes-del-reset-fundo: hsl(281, 89%, 26%);
+  --botoes-del-reset-shadow: 0 3px hsl(285, 91%, 52%);
+  --botoes-del-reset-fonte-cor: white;
+
+  --botoes-igual-fundo: hsl(176, 100%, 44%);
+  --botoes-igual-shadow: 0 3px hsl(177, 92%, 70%);
+  --botoes-igual-fonte-cor: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+button {
+  font-family: 'Spartan', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--container-fundo);
+}
+
+.calculadora {
+  max-width: 430px;
+}
+
+/* Topo */
+
+.numeros-topo {
+  color: var(--tema-numeros-cor);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.calc-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calc-topo #logo {
+  color: var(--logo-fonte-cor);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Opção de temas */
+
+.theme {
+  display: flex;
+  align-items: center;
+}
+
+.theme span {
+  color: var(--theme-fonte-cor);
+  text-transform: uppercase;
+  font-size: .6rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+
+  margin-right: 15px;
+  margin-top: 4px;
+}
+
+.temas-checkbox{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#tema-1, #tema-2, #tema-3 {
+  display: none;
+}
+
+.temas-checkbox .label-1 {
+  width: 1.16rem;
+  height: 1.3rem;
+  background: var(--tema-fundo);
+  border-radius: 32px 0 0 32px;
+  
+  cursor: pointer;
+}
+
+.temas-checkbox .label-2 {
+  width: 1.16rem;
+  height: 1.3rem;
+  background: var(--tema-fundo);
+  
+  cursor: pointer;
+}
+
+.temas-checkbox .label-3 {
+  width: 1.16rem;
+  height: 1.3rem;
+  background: var(--tema-fundo);
+  border-radius: 0 32px 32px 0;
+  
+  cursor: pointer;
+}
+
+label:last-of-type::after {
+  content: '';
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: var(--tema-check);
+  border-radius: 50%;
+  bottom: 0.25rem;
+  left: .20rem;
+  transition: transform 0.3s ease;
+}
+
+input:first-of-type:checked ~ label:last-of-type::after {
+  transform: translateX(0);
+}
+
+input:nth-of-type(2):checked ~ label:last-of-type::after {
+  transform: translateX(1rem);
+}
+
+input:last-of-type:checked ~ label:last-of-type::after {
+  transform: translateX(2.2rem);
+}
+
+/* Visor */
+
+.visor {
+  max-width: 430px;
+  height: 80px;
+  background: var(--visor-background);
+  border-radius: 0.4rem;
+  border: 0;
+  margin: 20px 0 20px 0;
+  padding: 10px 30px 10px 30px;
+  box-sizing: border-box;
+
+  font-size: 2.5rem;
+  color: var(--visor-fonte);
+  font-weight: 700;
+  font-family: 'Spartan', sans-serif;
+  text-align: right;
+}
+
+/* Botões */
+
+.fundo-botoes {
+  background-color: var(--botoes-background);
+  padding: 15px;
+  border-radius: .4rem;
+}
+
+.linha-um {
+  display: flex;
+}
+
+.linha-dois {
+  display: flex;
+}
+
+.linha-tres {
+  display: flex;
+}
+
+.linha-quatro {
+  display: flex;
+}
+
+.linha-cinco {
+  display: flex;
+}
+
+.calc-botao {
+  width: 80px;
+  height: 50px;
+  margin: 10px;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: .6rem;
+  border: 0;
+  color: var(--botoes-geral-cor);
+  background: var(--botoes-geral-fundo);
+  cursor: pointer;
+  box-shadow: var(--botoes-geral-shadow);
+}
+
+.calc-botao:hover {
+  filter: brightness(80%);
+  color: var(--botoes-geral-hover);
+}
+
+.calc-botao.del, .calc-botao.config {
+  font-size: 1rem;
+}
+
+.calc-botao.config {
+  width: 100%;
+}
+
+.calc-botao.del, .calc-botao.reset {
+  background: var(--botoes-del-reset-fundo);
+  box-shadow: var(--botoes-del-reset-shadow);
+  color: var(--botoes-del-reset-fonte-cor);
+}
+
+.calc-botao.igual {
+  background: var(--botoes-igual-fundo);
+  box-shadow: var(--botoes-igual-shadow);
+  color: var(--botoes-igual-fonte-cor);
+}
+
+@media (max-width: 500px) {
+  .calculadora {
+    max-width: 300px;
+  }
+
+  #visor {
+    max-width: 300px;
+  }
+
+  .calc-botao {
+    border-radius: .2rem;
+    margin: 8px;
+  }
+}
+
+
